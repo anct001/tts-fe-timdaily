@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div role="tablist" aria-label="Thông tin sản phẩm">
+        <button role="tab" id="tab1" aria-selected="true" aria-controls="panel1">
+          Mô tả
+        </button>
+        <button role="tab" id="tab2" aria-selected="false" aria-controls="panel2">
+          Đặc điểm kỹ thuật
+        </button>
+      </div>
+      
+      <div role="tabpanel" id="panel1" aria-labelledby="tab1">
+        <h3>Mô tả sản phẩm</h3>
+        <p>Đây là mô tả chi tiết về sản phẩm...</p>
+      </div>
+      
+      <div role="tabpanel" id="panel2" aria-labelledby="tab2" hidden>
+        <h3>Đặc điểm kỹ thuật</h3>
+        <ul>
+          <li>Kích thước: 10 x 20 cm</li>
+          <li>Trọng lượng: 500g</li>
+          <li>Màu sắc: Đen, Trắng, Xám</li>
+        </ul>
+      </div>
+</body>
+</html>
